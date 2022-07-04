@@ -12,7 +12,6 @@
 import { initMixin } from './init'
 
 function Vue(options) { // options就是用户的选项
-    debugger
     this._init(options)
 }
 
