@@ -10,8 +10,8 @@
 
 <body>
     <div id="app">
-        <div>
-            {{name}}
+        <div style="color: red">
+            {{name}} hello
         </div>
         <span>{{age}}</span>
     </div>
@@ -26,14 +26,16 @@
                         num: 30,
                         content: '回车巷'
                     },
-                    hobby: ['aaa', 'bbb', { a: 1 }]
+                    hobby: ['aaa', 'bbb', {
+                        a: 1
+                    }]
                 }
             },
             el: '#app', // 我们要将数据 解析到el元素上
             // render() {
             //     return createElement('div', {})
             // }
-            template: '<div>hello</div>'
+            // template: '<div>hello</div>'
         })
         // 1.模版引擎  性能差，需要正则匹配替换  1.0的时候，没有引入虚拟DOM的改变
         // 2.采用虚拟DOM，数据变化后比较虚拟DOM的差异，最后更新需要更新的地方
